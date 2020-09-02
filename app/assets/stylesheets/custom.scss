@@ -1,0 +1,115 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+    padding-top: 60px;
+  }
+  
+  section {
+    overflow: auto;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .center {
+    text-align: center;
+    background-color: rbg(255,255,0);
+    margin-top: 150px;
+  }
+  
+  .center h1 {
+    margin-bottom: 150px;
+    color: #00F;
+  }
+
+  .btn {
+      font-size: 4em;
+  }
+
+  .btn1 {
+      font-size: 2em;
+  }
+
+
+  
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1;
+  }
+  
+  h1 {
+    font-size: 3em;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  
+  
+  p {
+    font-size: 1.1em;
+    line-height: 1.7em;
+  }
+
+  #logo {
+    float: left;
+    margin-right: 10px;
+    font-size: 1.7em;
+    color: #00F;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding-top: 9px;
+    font-weight: bold;
+  }
+  
+  #logo:hover {
+    color: #000;
+    text-decoration: none;
+  }
+
+
+  
+  #ab {
+      color: #00F;
+  }
+
+  #ab:hover {
+      color: #000;
+  }
+
+  
+
+
+  body {
+     background-image: url("rails.jpg");
+     background-size: cover;
+  }
+
+  footer {
+    margin-top: 45px;
+    padding-top: 5px;
+    border-top: 1px solid #F00;
+    color: #00F;
+  }
+
+  footer small {
+    float: left;
+  }
+
+  .navbar {
+      background-color: #FFF;
+  }
+
+  .help {
+      color:#00F;
+  }
+
+  .about {
+    color:#00F;
+}
+
+.signup {
+    color:#00F;
+}
