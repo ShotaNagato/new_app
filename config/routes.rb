@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get '/s_signup', to: 's_users#new'
   get '/t_signup', to: 't_users#new'
   resources :s_users
+  resources :t_users
 end
