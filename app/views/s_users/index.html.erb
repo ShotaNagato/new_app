@@ -1,0 +1,16 @@
+<% provide(:title, 'Students') %>
+<div class="blue">
+ <h1>生徒一覧</h1>
+ </div>
+
+
+
+<ul class="users">
+  <% @users.each do |t_user| %>
+    <li>
+      <%= gravatar_for t_user, size: 50 %>
+      <%= link_to t_user.name, t_user %>
+    </li>
+  <% end %>
+</ul>
+

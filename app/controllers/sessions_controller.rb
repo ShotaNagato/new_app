@@ -7,10 +7,10 @@ class SessionsController < ApplicationController
     t_user = TUser.find_by(email: params[:session][:email].downcase)
     if s_user && s_user.authenticate(params[:session][:password])
        s_log_in s_user
-       redirect_to s_user
+       redirect_back_or s_user
     elsif t_user && t_user.authenticate(params[:session][:password])
        t_log_in t_user
-       redirect_to t_user
+       redirect_back_or t_user
     else
       flash.now[:danger] = 'Invalid email/password combination'
       render 'new'
