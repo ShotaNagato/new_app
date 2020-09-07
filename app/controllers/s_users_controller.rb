@@ -31,6 +31,7 @@ class SUsersController < ApplicationController
   def update
     if @user.update(s_user_params)
       flash[:success] = "更新しました。"
+      redirect_to @user
     else
       render 'edit'
     end

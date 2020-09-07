@@ -15,7 +15,7 @@ class TUsersController < ApplicationController
   end
 
   def create
-    @user =TUser.new(user_params)
+    @user =TUser.new(t_user_params)
     if @user.save
       t_log_in @user
       flash[:success] = "Welcome to the New App!"
@@ -31,12 +31,15 @@ class TUsersController < ApplicationController
   def update
     if @user.update(t_user_params)
       flash[:success] = "更新しました。"
+      redirect_to @user
     else
       render 'edit'
     end
   end
 
-   def user_params
+  private
+
+   def t_user_params
     params.require(:t_user).permit(:name, :email, :password,
       :password_confirmation)
    end
