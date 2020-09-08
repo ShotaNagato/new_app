@@ -15,14 +15,26 @@ body {
   
   .center {
     text-align: center;
-    background-color: rbg(255,255,0);
-    margin-top: 200px;
-  }
+    h1 {
+      font-size: 50px;
+      letter-spacing: -2px;
+      margin-top: 90px;
+      margin-bottom: 30px;
+      text-align: left;
+      font-weight: 900;
+      color: #00F;
+    }
   
-  .center h1 {
-    margin-bottom: 150px;
-    color: #00F;
+    h2 {
+      padding-bottom: 200px;
+      color: #000;
+    }
   }
+
+
+  
+  
+  
 
   .btn {
     font-size: 4em;
@@ -37,16 +49,10 @@ body {
 
   
 
-h1, h2, h3, h4, h5, h6 {
-    line-height: 1;
-  }
+
   
-  h1 {
-    font-size: 6em;
-    letter-spacing: -2px;
-    margin-bottom: 30px;
-    text-align: center;
-  }
+  
+
   
   
   
@@ -85,8 +91,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
   body {
-     background-image: url("rails.jpg");
-     background-size: cover;
+    background-image: url("off.jpg");
+    background-size: cover;
   }
 
   footer {
@@ -107,6 +113,10 @@ h1, h2, h3, h4, h5, h6 {
   .blue {
       color:#00F;
       padding-top: 10px;
+    h1 {
+      text-align: center;
+      font-size: 50px;
+    }
   }
 
   
@@ -153,12 +163,16 @@ input, textarea, select, .uneditable-input {
   }
 
   .alert-success {
-    padding-top: 40px
+    padding-top: 40px;
+  }
+
+  .alert-danger {
+    padding-top: 40px;
   }
 
 .d-flex {
   font-size: 50px;
-  padding-left: 60px;
+  padding-left: 91px;
 }
 
 .p-2 {
@@ -169,3 +183,7 @@ input, textarea, select, .uneditable-input {
   font-size: 1em;
 }
   
+section {
+  font-size: 8px;
+  padding-top: 30px;
+}
