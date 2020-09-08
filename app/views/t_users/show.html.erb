@@ -1,3 +1,5 @@
 <%= render 'users/show' %>
-
-<%= render 'users/btnt'%>
+<%= @user.profile %>
+<% if t_logged_in? %>
+ <%= render 'users/btnt'%>
+<% end %>

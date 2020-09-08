@@ -37,11 +37,13 @@ class TUsersController < ApplicationController
     end
   end
 
+
+
   private
 
    def t_user_params
     params.require(:t_user).permit(:name, :email, :password,
-      :password_confirmation)
+      :password_confirmation, :profile)
    end
 
    def logged_in_t_user

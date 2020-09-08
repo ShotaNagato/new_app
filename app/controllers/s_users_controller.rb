@@ -37,10 +37,11 @@ class SUsersController < ApplicationController
     end
   end
 
+
   private
    def s_user_params
     params.require(:s_user).permit(:name, :email, :password,
-      :password_confirmation)
+      :password_confirmation, :profile)
    end
 
    def logged_in_s_user

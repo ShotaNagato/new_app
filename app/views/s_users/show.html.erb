@@ -1,4 +1,6 @@
 <%= render 'users/show' %>
-
-<%= render 'users/btns'%>
+<%= @user.profile %>
+<% if s_logged_in? %>
+　<%= render 'users/btns'%>
+<% end %>
   
