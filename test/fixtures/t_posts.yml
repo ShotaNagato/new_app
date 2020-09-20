@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  recruit: MyText
+  t_user: one
+
+two:
+  recruit: MyText
+  t_user: two

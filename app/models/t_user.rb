@@ -8,4 +8,5 @@ class TUser < ApplicationRecord
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
   validates :profile, presence: true, length: { maximum: 200 }
+  has_many :t_posts
 end

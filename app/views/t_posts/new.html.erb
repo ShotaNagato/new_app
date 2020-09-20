@@ -1,0 +1,16 @@
+<% provide(:title, "Post") %>
+<div class="blue">
+ <h1>生徒を募集</h1>
+</div>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_with(model: @post, local: true) do |f| %>
+
+      <%= f.label :募集内容 %>
+      <%= f.text_area :recruit, class: 'form-control' %>
+
+      <%= f.submit "投稿", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 't_posts/new'
   get 'sessions/new'
   get 't_users/new'
   get 's_users/new'
@@ -10,6 +11,9 @@ Rails.application.routes.draw do
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
+  get '/t_post', to: 't_posts#new'
+  post '/t_post', to: 't_posts#create'
   resources :s_users
   resources :t_users
+  resources :t_posts
 end
