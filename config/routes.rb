@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 's_posts/new'
   get 't_posts/new'
   get 'sessions/new'
   get 't_users/new'
@@ -13,7 +14,10 @@ Rails.application.routes.draw do
   delete 'logout', to: 'sessions#destroy'
   get '/t_post', to: 't_posts#new'
   post '/t_post', to: 't_posts#create'
+  get '/s_post', to: 's_posts#new'
+  post '/s_post', to: 's_posts#create'
   resources :s_users
   resources :t_users
   resources :t_posts
+  resources :s_posts
 end
