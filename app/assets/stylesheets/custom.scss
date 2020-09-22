@@ -187,3 +187,17 @@ section {
   font-size: 8px;
   padding-top: 30px;
 }
+
+.main {
+  float: right;
+}
+
+#wrap {
+  clear: both;
+}
+
+.clearfix:after {
+  content:"";
+  display: block;
+  clear: both;
+}
