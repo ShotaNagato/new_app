@@ -1,5 +1,7 @@
 <%= render 'users/show' %>
+<div class="profile">
 <%= @user.profile %>
+</div>
 <% if s_logged_in? %>
 　<%= render 'users/btns'%>
 <% end %>

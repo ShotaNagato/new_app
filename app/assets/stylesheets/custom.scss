@@ -1,201 +1,134 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body {
-    padding-top: 60px;
-  }
-  
-  section {
-    overflow: auto;
-  }
-  
-  textarea {
-    resize: vertical;
-  }
-  
-  .center {
-    text-align: center;
-    h1 {
-      font-size: 40px;
-      margin-top: 90px;
-      margin-bottom: 30px;
-      text-align: left;
-      font-weight: 900;
-      color: #00F;
-    }
-  
-    h2 {
-      font-size: 20px;
-      padding-top: 10px;
-      padding-bottom: 20px;
-      color: #000;
-      text-align: left;
-    }
-  }
-
-  .btn {
-    font-size: 4em;
-    margin-top:120px;
+header .container {
+  width: 100%;
+  height: 120px;
+  margin: 0 auto;
+  background-color: #fff;
 }
 
-  .btn1 {
-      font-size: 2em;
-      color:#FFF;
-  }
+#logo {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10%;
+}
 
-
-  
-
-  
-
-
-  
-  
-
-  
-  
-  
-  p {
-    font-size: 1.1em;
-    line-height: 1.7em;
-  }
-
-  #logo {
+.nav {
+  float: right;
+  padding-right: 10%;
+  li {
     float: left;
-    padding: 15px 0 ;
   }
-  
-  #logo:hover {
-    color: #000;
-    text-decoration: none;
-  }
-
-
-  
   #ab {
-      color: #00F;
-      padding:25px 10px 25px 10px;
-      font-size: 20px;
-  }
-
-  #ab:hover {
-      color: #000;
-  }
-
-  
-
-
-  body {
-    background-image: url("off.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-  }
-
-  footer {
-    margin-top: 45px;
-    padding-top: 5px;
-    border-top: 1px solid #F00;
     color: #00F;
+    font-size: 20px;
+    margin-top: 35px;
   }
-
-  footer small {
-    float: left;
+  #ab:hover {
+    color: #000;
   }
-
-  .navbar {
-      background-color: #FFF;
+  .dropdown-toggle {
+    color: #00F;
+    font-size: 20px;
+    margin-top: 35px;
   }
-
-  .blue {
-      color:#00F;
-      padding-top: 10px;
-    h1 {
-      text-align: center;
-      font-size: 50px;
-    }
-  }
-
-  
-
-input, textarea, select, .uneditable-input {
-    border: 1px solid #bbb;
-    width: 100%;
-    margin-bottom: 15px;
-    
-  }
-  
-  input {
-    height: auto !important;
-  }
-
-  #error_explanation {
-    color: red;
-    ul {
-      color: red;
-      margin: 0 0 30px 0;
-    }
-  }
-  
-  .field_with_errors {
-    @extend .has-error;
-    .form-control {
-      color: $state-danger-text;
-    }
-  }
-  .account{
-    color:#00F;
-    font-size:20px;
-    padding-top:10px;
-  }
-
-  .users {
-    list-style: none;
-    margin: 0;
-    li {
-      overflow: auto;
-      padding: 10px 0;
-      border-bottom: 1px solid $gray-lighter;
-    }
-  }
-
-  .alert-success {
-    padding-top: 40px;
-  }
-
-  .alert-danger {
-    padding-top: 40px;
-  }
-
-.d-flex {
-  font-size: 50px;
-  padding-left: 91px;
 }
 
-.p-2 {
+.center {
+  width: 100%;
+  height: 600px;
+  h1 {
+    font-size: 40px;
+    margin-top: 40px;
+    color: #FFF;
+  }
+  h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  .row {
+    text-align: center;
+    .btn {
+      font-size: 40px;
+      margin-top: 200px;
+    }
+    .btn1 {
+      font-size: 20px;
+      margin-top: 5px;
+    }
+  }
+}
+
+body {
+  background-color: #00cc00;
+  background-attachment: fixed;
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+  border-top: 1px solid #f00;
+  small {
+    color: #00F;
+    font-weight: bold;
+  }
+}
+
+.blue {
+  margin-top: 10px;
+  margin-bottom: 20px;
   color: #00F;
+  h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+  p {
+    font-size: 20px
+  }
+}
+
+.form {
+  text-align: center;
+  color: #00F;
+  font-size: 20px;
+  .form-control {
+    margin-bottom: 40px;
+  }
+  .btn {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
 }
 
 .btn3 {
-  font-size: 1em;
-}
-  
-section {
-  font-size: 8px;
-  padding-top: 30px;
-}
-
-.main {
-  float: right;
+  margin-left: 10%;
+  font-size: 20px;
+  .p-2 {
+    margin: 20px 0;
+    font-weight: bold;
+  }
 }
 
-#wrap {
-  clear: both;
+section h1 {
+  margin-left: 10%;
 }
 
-.clearfix:after {
-  content:"";
-  display: block;
-  clear: both;
+.profile {
+  margin-left: 10%;
+  font-size: 20px;
+  margin-bottom: 20px;
+  h1 {
+    font-weight: bold;
+  }
+}
+
+.row .name {
+  font-size: 20px;
+}
+
+.row .recruit {
+  font-size: 15px;
 }

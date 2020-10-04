@@ -3,12 +3,18 @@
  <h1>先生募集一覧</h1>
 </div>
 
-<div class="row">
+<% @posts.each do |s_post| %>
+ <div class="row">
   <div class="col-md-6 col-md-offset-3">
-   <% @posts.each do |s_post| %>
-     <%= s_post.s_user.name %>
+   <div class="name">
+     <%= link_to s_post.s_user.name, s_post.s_user %>
+   </div>
+   <div class="recruit">
      <%= s_post.recruit %>
-   <% end %>
+   </div>
   </div>
-</div>
+ </div>
+<% end %>
+
+
 

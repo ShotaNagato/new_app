@@ -1,8 +1,8 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-    <div class="container">
-     <%= link_to image_tag("twitter_header_photo_1.png",width:"250px",height:"60px"),root_path ,id:"logo" %>
+<header class="navbar">
+    <div class="container"> 
+     <%= link_to image_tag("twitter_header_photo_1.png",width:"250px",height:"100px"),root_path ,id:"logo" %>
      <nav>
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav">
        <li><%= link_to 'アプリ詳細', about_path,id:"ab" %></li>
        <li><%= link_to 'ヘルプ', help_path,id:"ab" %></li>
        <% if s_logged_in? %>
