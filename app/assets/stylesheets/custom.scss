@@ -33,11 +33,6 @@ body {
     }
   }
 
-
-  
-  
-  
-
   .btn {
     font-size: 4em;
     margin-top:120px;
@@ -93,6 +88,9 @@ body {
   body {
     background-image: url("off.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
   }
 
   footer {
